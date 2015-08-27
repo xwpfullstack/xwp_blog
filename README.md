@@ -1,17 +1,8 @@
-vmaig.com 网站源码
 =================
-#有问题欢迎加qq群
-vmaig qq群: 458788510  
-我的qq: 994171686  
 
-
-#更新日志
-2015/5/15 从django1.6 升级到 django1.8 (还保留django1.6分支)  
-2015/6/21 添加[xadmin分支](https://github.com/billvsme/vmaig_blog/tree/xadmin),xadmin分支中使用xadmin作为后台管理(使用 django 1.8),如果你想后台比较漂亮可以切换到xadmin分支(注意你不需要pip install django-xadmin 但是需要安装django-crispy-forms跟django-reversion详细步骤见xadmin分支中的README)  
-2015/7/5 对xadmin分支中的错误进行了比较大的修改  
 
 #概述
-vmaig\_blog 是一个基于  **Django1.8**  跟  **Bootstrap3**  开发的 **博客系统** ，实现了一个博客完整的功能。http://vmaig.com 就是基于vmaig\_blog 搭建的。
+blog 是一个基于  **Django1.8**  跟  **Bootstrap3**  开发的 **博客系统** ，实现了一个博客完整的功能。
 #功能
 1. 文章,分类,专栏的添加，删除，修改。支持**tinymce**富文本编辑器。支持文章中代码**高亮**。
 2. 实现**用户注册,登陆,修改密码,忘记重置密码**。通过**邮箱**通知注册用户, 用户忘记密码基于邮件（需要在setting.py设置好邮箱)。
@@ -23,8 +14,6 @@ vmaig\_blog 是一个基于  **Django1.8**  跟  **Bootstrap3**  开发的 **博
 8. 拥有一个以**时间轴**显示的非常酷炫的“新闻”板块，你可以每天在后台添加新闻。
 9. 支持**手机浏览**，对手机浏览进行了调整。
 
-#Demo
-http://vmaig.com   
 
 #预览
 ![首页](http://vmaig.qiniudn.com/screenshot/vmaig_01.jpg)
@@ -67,7 +56,7 @@ http://vmaig.com
 
 配置setting.py :
 
-    vim vmaig_blog/setting.py
+    vim xwp_blog/setting.py
 设置其中的  PAGE\_NUM 每页显示文章数，EMAIL\_HOST(你用的邮箱的smtp)，EMAIL\_PORT(smtp端口)，EMAIL\_HOST\_USER(你的邮箱的用户名)，如果要使用七牛设置好七牛的相关配置。
 EMAIL\_HOST\_PASSWORD(你的邮箱密码)，
 ```
